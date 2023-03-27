@@ -40,6 +40,7 @@ public class MathCalculator {
                 break;
             case 7:
                 //power method
+			int exponent(num1, num2);
                 break;
             default:
                 System.out.println("You may have entered an Incorrect operation");
@@ -88,5 +89,13 @@ public class MathCalculator {
     }    
     
     //factorial method
+	
     //power(exponential)
+	static int exponent(int base, int exponent) {
+    if (exponent == 0) {
+        return 1;
+    } else {
+        return base * exponent(base, exponent - 1);
+    }
+}
 }
